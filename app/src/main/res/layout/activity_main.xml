@@ -40,6 +40,24 @@
             android:id="@+id/twenty_percent"
             android:text="@string/amazing_20"
             />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_cosntraintTop_toBottomOf="@id/twenty_percent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/eightteen_percent"
+            android:text="@string/good_18"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/eightteen_percent"
+            app:layout_constrintStart_toStartOf="parent"
+            android:id="@+id/fifteen_percent"
+            android:text="@string/okay_15"
+            />
     </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
