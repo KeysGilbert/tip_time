@@ -7,15 +7,24 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/cost_of_service"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:hint="@string/cost_of_service"
-        android:inputType="numberDecimal"
+        android:id="@+id/cost_of_service"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TouchTargetSizeCheck" />
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cost_of_service_edit_text"
+            android:hint="@string/cost_of_service"
+            android:inputType="numberDecimal">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
 
    <TextView
        android:layout_width="wrap_content"
