@@ -25,12 +25,13 @@
         android:id="@+id/cost_of_service"
         android:layout_marginStart="16dp"
         app:layout_constraintStart_toEndOf="@id/icon_cost_of_service"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         app:layout_constraintTop_toTopOf="parent">
 
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:id="@+id/cost_of_service_edit_text"
             android:hint="@string/cost_of_service"
             android:inputType="numberDecimal">
